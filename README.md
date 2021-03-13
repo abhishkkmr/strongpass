@@ -1,6 +1,6 @@
 # StrongPass : Random Password generator.
 StrongPass is a c++ program which is created to generate random strong passwords. Program will take user input of desired length. If the length is less than of equal to 8, then program will output error and ask user to input password once again. If the length of password is greater than or equal to 64, the user will get error of "too long" length. As passwords of length greater than 64 might not be acceptable in some websites.
 
-There are choices for user to generate password of their choices. Program will ask user if they want to include Uppercase , Numeric values or Special characters in their passwords? User have to press 1 for Yes and 0 for No.
+There are choices for user to generate password of their choices. Program will ask user if they want to include Uppercase , Numeric values or Special characters in their passwords? User have to press 1 for Yes and 0 for No. There is condition for the Special characters. The number of special characters present in the password should be only in one fourth of the password. i.e If length of password is 20, and if Special characters includation is Yes, then Special Characters in the program will be less than 5. This condition will restrict to add more than 25% of password of special characters.
 
 The program will generate the password for user as per their choices. If user doesn't want to include any of the choice given, then the password generated is of only lower case characters.
