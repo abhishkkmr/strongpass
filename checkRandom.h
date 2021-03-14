@@ -12,6 +12,9 @@ int WhichCharacter(int num)
     else if(num>=48&&num<=57){
         return 3;  //Numeric Numbers
     }
+    else if(num==33||num==35||num==36||num==38||num==64){
+        return 5; // !@#$&
+    }
     else if((num>=32&&num<=47)||(num>=58&&num<=64)||(num>=91&&num<=96)||(num>=123&&num<=126)){
         return 4; //Special Characters
     }
