@@ -6,7 +6,7 @@ using namespace std;
 
 int strongPass()
 {
-    int length , UppercaseChoice, numericChoice , specialChoice ;
+    int length , UppercaseChoice, numericChoice , specialChoice , customSpecial ;
 
     cout<<"Enter Length of Password : ";cin>>length;
 
@@ -33,6 +33,9 @@ int strongPass()
 
     cout<<"Do you want to Include Numberic Characeters? : ";
     cin>>numericChoice;
+
+    cout<<"Do you want to Include !@#$? : ";
+    cin>>customSpecial;
 
     cout<<"Do you want to Include Special Characeters? : ";
     cin>>specialChoice;
@@ -61,6 +64,10 @@ int strongPass()
                 counter += 1;
             }
             else if(CheckType==3&&numericChoice==1){
+                pass = pass + char(ranNumber);
+                counter+=1;
+            }
+            else if(CheckType==5&&customSpecial==1){
                 pass = pass + char(ranNumber);
                 counter+=1;
             }
