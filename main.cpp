@@ -10,15 +10,15 @@ int strongPass()
 
     cout<<"Enter Length of Password : ";cin>>length;
 
-    while(length<=8||length>=64)
+    while(length<8||length>128)
     {
-        if(length<=8)
+        if(length<8)
         {
             cout<<"Error : Password Length should be at least 8\n";
             cout<<"Enter Length again : ";cin>>length;
         
         }
-        else if(length>=64)
+        else if(length>128)
         {
             cout<<"Warning : Password is too Long,try again\n";
             cout<<"Enter Length again. : ";cin>>length;
