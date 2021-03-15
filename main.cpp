@@ -2,7 +2,7 @@
 using namespace std;
 
 #include "checkRandom.h"
-
+#include "saveFile.h"
 
 int strongPass()
 {
@@ -99,6 +99,14 @@ int strongPass()
     }
 
     cout<<"\nGenerated Password : "<<pass<<"\n";
+    cout<<"Do you want to save password in text file? ";
+    
+    string saveChoice;
+    cin>>saveChoice;
+
+    if(saveChoice=="yes"||saveChoice=="y"||saveChoice=="Yes"){
+        savePasswordText(pass);
+    }
 
     return 0;
 }
