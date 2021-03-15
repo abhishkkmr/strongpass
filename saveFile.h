@@ -13,6 +13,5 @@ void savePasswordText(string password)
     ofstream PasswordFile(fileName);
     PasswordFile<<password;
     PasswordFile.close();
-
-
+    
 }
